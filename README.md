@@ -16,7 +16,7 @@ https://github.com/kobedimotheo2/Transport_mini_project
  Transport and Mobility
 
 # Concept Overview
-This system is designed to address key challenges faces by the pblic in the transport sector. Many commuters experince uncertainty, delays, and inconvenience due to limited access to reliable transport information and services.
+This system is designed to address key challenges faces by the public in the transport sector. Many commuters experience uncertainty, delays, and inconvenience due to limited access to reliable transport information and services.
 
 # Problem Statement
 Public transport in Southern African cities and towns, like Gaborone, operate with very little structure.
