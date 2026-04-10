@@ -14,7 +14,7 @@ This is the CSI142 (BinaryVI) group project.
 
 ## Concept Overview
 
-This system is designed to address key challenges faces by the public in the transport sector. Many commuters experince uncertainty, delays, and inconvenience due to limited access to reliable transport information and services
+This system is designed to address key challenges faces by the public in the transport sector. Many commuters experience uncertainty, delays, and inconvenience due to limited access to reliable transport information and services
 
 # Problem Statement
 The current public transport system experiences several challenges:
