@@ -1,11 +1,11 @@
 //package com.transport.app;
 
-import java.util.Scanner;
+/*import java.util.Scanner;
 import transport.model.Passenger;
 import transport.model.Route;
 import transport.model.Booking;
 import transport.service.BookingService;
-import transport.service.FareCalculator;
+import transport.service.FareCalculator;*/
 
 public class MainApp{
     public static void main(String []args){
@@ -32,7 +32,7 @@ public class MainApp{
                 if (choice >= 1 && choice <= 4){
                         if(choice == 1){
                             System.out.println("Displaying routes...\n");
-
+                            TODO
                             //System.out.println("Available routes");
                             //System.out.println(route1.getRouteInfo() +" Distance" + route1.getDistance() + " km");
                             
@@ -43,7 +43,7 @@ public class MainApp{
                             String name = sc.nextLine();
                             System.out.println("Enter Passenger phone number: ");
                             String phone = sc.nextLine();
-
+                            //TODO
                             //Passenger passenger = new Passenger(name , phone);
 
                             //Booking booking = new Booking (passenger, route1);
@@ -52,10 +52,12 @@ public class MainApp{
                     
                         }else if(choice == 3){
                             System.out.println("Viewing bookings...\n");
+                            //TODO
                             //bookingService.viewBookings();
                                 
                         }else if(choice == 4){
                             System.out.println("Calculating fare...\n");
+                            //TODO
                             //double fare = fareCalculator.calculateFare(route1.getDistance());
                             //System.out.println("Fare for "+ route1.getRouteinfo()+ "is: P" + fare);
                             
