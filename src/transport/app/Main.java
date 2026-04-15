@@ -57,7 +57,7 @@ public class Main{
                         }     
                         }
                         else {
-                            System.out.println("please choose the correct choice");
+                            System.out.println("Please choose the correct choice");
                         }
             }
                         
