@@ -1,13 +1,16 @@
-package Transport.Service;
-public class BookingService {
-    private ArrayList<Booking> bookings = new ArrayList<>();
+//package Transport.Service;
+public class BookingService 
+{
+   /* private ArrayList<Booking> bookings = new ArrayList<>();
 
-    public void addBooking(Passenger passenger, Route route) {
+    public void addBooking(Passenger passenger, Route route) 
+    {
         bookings.add(new Booking(passenger, route));
         System.out.println("Booking added.");
     }
 
-    public void showBookings() {
+    public void showBookings() 
+    {
         if (bookings.isEmpty()) {
             System.out.println("No bookings.");
             return;
@@ -16,4 +19,5 @@ public class BookingService {
             b.displayBooking();
         }
     }
+*/
 }
