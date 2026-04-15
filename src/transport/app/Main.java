@@ -1,4 +1,13 @@
+package tranport.app;
+
 import java.util.Scanner; 
+
+import transport.model.Passenger;
+import transport.model.Routes;
+import transport.model.Booking;
+import transport.service.BookingService;
+import transport.service.FareCalculator;
+import transport.util;
 
 public class Main{
     public static void main(String []args){
