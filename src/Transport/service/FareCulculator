@@ -1,0 +1,19 @@
+//package Transport.service;
+
+public class FareCalculator{
+
+    public static double calculateFare(String route, int passengers){
+        double pricePerSeat;
+
+        if(route.equalsIgnoreCase("Maun-Gabs")){
+            pricePerSeat = 950*0.38;
+        }else if(route.equalsIgnoreCase("Gabs-Francistown")){
+            pricePerSeat = 440*0.38;
+        }else if(route.equalsIgnoreCase("Francistown-Maun")){
+            pricePerSeat = 568*0.38;
+        }else{
+            System.out.println("Invalid route; " + route)
+            return 0;
+        }    
+    }    
+}
