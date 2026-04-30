@@ -50,6 +50,8 @@ To address these challenges, the system introduces the following features:
            |    ├── Bus.java
            |    ├── Passenger.java
            |    ├── Routes.java
+           |    └── Vehicle/
+           |         └── Vehicle.java
            └── service/
                  ├── BookingService.java
                  └── FareCalculator.java
