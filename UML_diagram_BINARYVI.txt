@@ -1,0 +1,78 @@
+
+                                                   <<abstract>>
+                                                     Vehicle
+                              +--------------------------------------------------------------+
+                              | - registration : String                                      |
+                              | - capacity : int                                             |
+                              | - operator : String                                          |
+                              +--------------------------------------------------------------+
+                              | + getLabel() : String  «abstract»                            |
+                              +--------------------------------------------------------------+
+                                      ^               |                     ^
+                                      |               |                     |
+                          extends     |               |                     |      extends
+                     +----------------+               |                     +-----------------+
+                     |                                |                                       |
+  +--------------------------------+                  |                 +------------------------------------+
+  |              Bus               |                  |                 |              Combi                 |
+  +--------------------------------+             - vehicle              +------------------------------------+
+  | - name : String                |                  |                 | - route : String                   |
+  | - bookedSeats : ArrayList<String>                 |                 | - fare : double = 9.00             |
+  | + FLEET : Bus[]  «static final»|                  |                 | + COMBIS : Combi[]  «static final» |
+  +--------------------------------+                  |                 +------------------------------------+
+  | + getSeat() : String           |                  |                 | + getRoute() : String              |
+  | + getLabel() : String          |                  |                 | + getFare() : double               |
+  | + getName() : String           |                  |                 | + getLabel() : String              |
+  | + getCapacity() : int          |                  |                 | + getCapacity() : int              |
+  +--------------------------------+                  |                 +------------------------------------+
+                                                      |                                                      
+                                                      |
+  +--------------------------------+                  |                  +------------------------------------+
+  |           Passenger            |                  |                  |              Routes                |
+  +--------------------------------+                  |                  +------------------------------------+
+  | - firstName : String           |                  |                  | - journey : int                    |
+  | - lastName : String            |                  |                  | - time : int                       |
+  | - phoneNumber : String         |                  +----------------<>| - vehicle : Vehicle                |
+  +--------------------------------+                                     | - ROUTE_NAMES : String[][]  «static»|
+  | + getFullName() : String       |<|-----------+              +------|>| - FLEET_INDEX : int[][]  «static»  |
+  | + getFirstName() : String      |             |              |        | - Times : String[]  «static»       |
+  | + getLastName() : String       |             |              |        +------------------------------------+
+  | + getPhoneNumber() : String    |             |              |        | + displayInfo() : void             |
+  | + setFirstName(s) : void       |             |              |        | + getChoice() : String             |
+  | + setLastName(s) : void        |             |              |        | + getBus() : String                |
+  | + setPhoneNumber(s) : void     |             |              |        | + getVehicle() : Vehicle           |
+  +--------------------------------+             |              |        | + getDistanceKm() : double         |
+                 |                               |              |        | + getRouteInfo() : String          |
+                 |                          - passenger     - routes     +------------------------------------+
+                 |                               |              |
+                 |                               |              |
+                 |                               |              |
+  +--------------------------------+        +------------------------------------+        +--------------------------------+
+  |       BookingService           |-------o|            Booking                 |-------o|        FareCalculator          |
+  +--------------------------------+        +------------------------------------+        +--------------------------------+
+  | - bookings : ArrayList<Booking>|        | - passenger : Passenger            |        | - RatePerKm : double = 0.38    |
+  +--------------------------------+        | - routes : Routes                  |        |  «private static final»        |
+  | + addBooking(b) : void         |        | - fare : double                    |        +--------------------------------+
+  | + showBookings() : void        |        | - seat : String                    |        | + calculateFare(j,t) : double  |
+  +--------------------------------+        +------------------------------------+        +--------------------------------+
+                 o                          | + calculateFare() : double         |                       o
+                 |                          | + displayDetails() : void          |                       |
+                 |                          | + Booking(p,r,fare)  «constructor» |                       | 
+                 |                          +------------------------------------+                       |
+                 | uses                                     o                                      uses  |
+                 |                                          |                                            |
+                 +------------------------------------------+--------------------------------------------+
+                                                            |
+                                                            |
+                                          +-----------------------------------+
+                                          |            MainApp                |
+                                          +-----------------------------------+
+                                          | + main(args : String[]) : void    |
+                                          +-----------------------------------+
+
+Legend:
+  ---->   Inheritance (extends)
+  -----o  Dependency / uses
+  <>----  Composition (owns)
+  ----|>  Aggregation (holds)
+  Numbers = multiplicity
