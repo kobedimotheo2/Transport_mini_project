@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 1)W3Schools. (2026). Java ArrayList. W3Schools.
  https://www.w3schools.com/java/java_arraylist.asp
 Used for: Syntax reference for ArrayList declaration and methods.
@@ -17,3 +18,24 @@ Used for: Syntax reference for ArrayList declaration and methods.
 
 4) Dr Kombe (2026) CSI142 Course Notes
   lecture notes to better understand lists, Collections and other oop concepts
+=======
+1)W3Schools. (2026). Java ArrayList. W3Schools.
+ https://www.w3schools.com/java/java_arraylist.asp
+Used for: Syntax reference for ArrayList declaration and methods.
+    Accessed: May 2026
+
+2)Google LLC. (2025). Google Maps.
+  for distance varification 
+  Google. (2024). Google Maps. Google LLC. https://www.google.com/maps
+
+ 3)Anthropic. Claude AI Assistant (claude.ai).
+    Used for:
+    - understanding the Booking.java compilation error (getSeat() method)
+    - Reviewing the OOP concept mapping document completeness
+    - MainApp line 19,21,27 used the line for astetical neatness
+    - code structure advice on Routes line 40
+    Date used: May 2025
+
+4) Dr Kombe (2026) CSI142 Course Notes
+  lecture notes to better understand lists, Collections and other oop concepts
+>>>>>>> 131e947cd57398fa0517dc2fdb0802ac85fb89e2
